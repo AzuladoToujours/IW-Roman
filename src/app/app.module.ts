@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RomanNumbersComponent } from './roman-numbers/roman-numbers.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RomanNumbersComponent
   ],
   imports: [
     BrowserModule,
