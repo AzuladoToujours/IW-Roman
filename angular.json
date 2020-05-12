@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IW-RomanNumbers"
+    }
+  },
+  "defaultProject": "IW-RomanNumbers",
+  "cli": {
+    "analytics": "eb45a73d-51c5-4b4c-9e19-2c41270db12a"
+  }
 }

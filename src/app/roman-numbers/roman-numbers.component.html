@@ -1,1 +1,17 @@
-<p>roman-numbers works!</p>
+<mat-card id= "card" style="text-align: center;">
+    <mat-card-title><h2>Transform Arabic Number</h2></mat-card-title>
+</mat-card>
+<div class="main-div">
+    <mat-card style="background-color: rgba(51, 170, 51, .1)">    
+        <mat-card-content>
+            <mat-form-field>
+                <input matInput placeholder="Arabic Number" [(ngModel)]="number.arabic" required name="arabic"
+                    id="arabic" #arabic (keyup)="transformNumber()" /> </mat-form-field><br />
+
+            <mat-form-field>
+                <input matInput placeholder="Roman Number" [(ngModel)]="number.roman" /> </mat-form-field><br />
+        </mat-card-content>
+    </mat-card>
+</div>
+
+

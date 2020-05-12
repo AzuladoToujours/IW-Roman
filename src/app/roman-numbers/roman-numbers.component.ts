@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RomanNumbersService} from '../services/roman-numbers.service'
 
 @Component({
   selector: 'app-roman-numbers',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RomanNumbersComponent implements OnInit {
 
-  constructor() { }
+  number: any ={}
+  constructor(private romanNumbersService: RomanNumbersService) { }
 
-  ngOnInit() {
+
+  ngOnInit(): void {
+  }
+
+  transformNumber() {
+    if(parseInt(this.number.arabic)){
+      this.number.roman = this.romanNumbersService.transformToRomanNumber(parseInt(this.number.arabic))
+    } else {
+      this.number.roman = ""
+    }
   }
 
 }
